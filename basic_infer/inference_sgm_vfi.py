@@ -209,8 +209,7 @@ def main():
     parser.add_argument(
         '--suffix', type=str, default=None, help='you can add a suffix string to the sr video name, for example, x2')
     args = parser.parse_args()
-    # args.ffmpeg_bin = os.environ.get('ffmpeg_exe_path', 'ffmpeg')
-    args.ffmpeg_bin = os.environ.get('ffmpeg_exe_path', '/usr/bin/ffmpeg')
+    args.ffmpeg_bin = os.environ.get('ffmpeg_exe_path', 'ffmpeg')
     # args.ffmpeg_bin = '/test/ffmpeg4.4'
 
     args.input = args.input.rstrip('/').rstrip('\\')
